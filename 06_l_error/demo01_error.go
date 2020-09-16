@@ -8,6 +8,7 @@ import (
 func main() {
 	f, err := os.Open("test.txt")
 	if err != nil {
+
 		//log.Fatal(err)
 		fmt.Println(err) //open test.txt: no such file or directory
 		if ins, ok := err.(*os.PathError); ok {
